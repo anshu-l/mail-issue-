@@ -1,118 +1,101 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>IEEE Day — Events</title>
-    <style>
-      /* Inline-friendly simple CSS */
-      body { margin:0; padding:20px; background:#f4f6f8; font-family: "Segoe UI", Roboto, Arial, sans-serif; color:#222; }
-      .email-wrapper { max-width:680px; margin:0 auto; background:#ffffff; border-radius:10px; overflow:hidden; box-shadow:0 6px 24px rgba(20,30,40,0.08); }
-      .header { text-align:center; padding:18px; background:linear-gradient(90deg,#003f8a,#0066cc); color:#fff; }
-      .header img { max-width:100%; display:block; margin:0 auto; border-bottom:6px solid rgba(255,255,255,0.06); }
-      .content { padding:22px; }
-      h1 { margin:8px 0 12px; font-size:20px; color:#0b3b78; }
-      p.lead { margin:0 0 14px; line-height:1.5; color:#333; }
-      .card { display:flex; gap:14px; align-items:center; margin:14px 0; padding:12px; border-radius:8px; background:#fbfdff; box-shadow:0 1px 0 rgba(0,0,0,0.03); }
-      .card img { width:110px; height:110px; object-fit:contain; border-radius:8px; background:#fff; padding:6px; }
-      .card .info { flex:1; }
-      .card .info h3 { margin:0 0 8px; font-size:16px; color:#09376a; }
-      .card .info p { margin:0 0 10px; font-size:14px; color:#333; line-height:1.4; }
-      .cta { display:inline-block; text-decoration:none; padding:8px 12px; border-radius:6px; background:#0066cc; color:white; font-weight:600; font-size:14px; }
-      .small { font-size:13px; color:#666; }
-      .divider { height:1px; background:#eef2f6; margin:18px 0; border-radius:2px; }
-      .footer { padding:16px; text-align:center; font-size:13px; color:#6b7680; background:#fafbfc; }
-      @media (max-width:520px){
-        .card { flex-direction:column; text-align:center; }
-        .card img { width:90%; height:auto; }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="email-wrapper" role="article" aria-label="IEEE Day Events">
-      <!-- Header / Hero -->
-      <div class="header">
-        <!-- Use your main banner image -->
-        <img src="main.png" alt="IEEE Day — Celebrate, Build, Compete" style="max-width:80%; display:block; margin:10 auto; border-bottom:3px solid rgba(255,255,255,0.06);" />
-        <div style="padding:10px 6px 18px;">
-          <h1 style="color:#fff; margin:8px 0 0;">IEEE Day — 7th & 8th October</h1>
-          <div style="font-size:14px; opacity:0.95;">Join us for two days of puzzles, bots, building and speed!</div>
-        </div>
-      </div>
-
-      <div class="content">
-        <p class="lead">IEEE Day is just around the corner — here’s the full line-up. Register using the links in each section. We’ll post posters and final details soon. See you in the chase, build, compete, and dominate!<br><br><strong>When:</strong> 7th & 8th Oct • <strong>Where:</strong> Online & IIITD campus</p>
-
-        <!-- Slash -->
-        <div class="card" role="region" aria-label="Slash — 24-Hour Cryptic Hunt">
-          <img src="slash.png" alt="Slash — Cryptic Hunt" />
-          <div class="info">
-            <h3>Slash — 24-Hour Cryptic Hunt</h3>
-            <p class="small">A cipher hides a clue; a clue unlocks a puzzle; a puzzle leads to a prize pool of ₹10,000+. Think, decode, win.</p>
-            <p class="small"><strong>When:</strong> 7th Oct (7 PM) → 8th Oct (7 PM) | <strong>Mode:</strong> Online</p>
-            <a class="cta" href="https://forms.gle/UYSz2K9hHxUxtGDX9" target="_blank" rel="noopener">Register</a>
-          </div>
-        </div>
-
-        <!-- Autorush -->
-        <div class="card" role="region" aria-label="Autorush — Build Autonomous Bots">
-          <img src="autorush.png" alt="Autorush — Build Autonomous Bots" />
-          <div class="info">
-            <h3>Autorush — Build Autonomous Bots</h3>
-            <p class="small">Build bots that race through surprise games — no hands, no keyboard. Beginner-friendly (ESP32).</p>
-            <p class="small"><strong>When:</strong> 8th Oct | <strong>Where:</strong> Offline (IEEE Week)</p>
-            <a class="cta" href="https://forms.gle/3SWzqe5J28NbSm6k8" target="_blank" rel="noopener">Register</a>
-          </div>
-        </div>
-
-        <!-- BYOL -->
-        <div class="card" role="region" aria-label="Build Your Own Lab">
-          <img src="byolb.png" alt="Build Your Own Lab - BYOL" />
-          <div class="info">
-            <h3>Build Your Own Lab (BYOL)</h3>
-            <p class="small">Hands-on workshop: build a working oscilloscope using ESP32. No prior experience required. Free refreshments.</p>
-            <p class="small"><strong>When:</strong> 7th Oct • 3 PM onwards | <strong>Where:</strong> C101, LHC Block</p>
-            <a class="cta" href="https://forms.gle/qdgfJuPGbuuBcHTW9" target="_blank" rel="noopener">Register</a>
-          </div>
-        </div>
-
-        <!-- Typothon -->
-        <div class="card" role="region" aria-label="Typothon — Typing Face-off">
-          <img src="Typothon.png" alt="Typothon — Typing Face-off" />
-          <div class="info">
-            <h3>Typothon — Ultimate Typing Face-off</h3>
-            <p class="small">Three rounds of speed, precision, and surprises. Typing matters when ₹7,000+ is at stake. BYO keyboard.</p>
-            <p class="small"><strong>When:</strong> 8th Oct • 3 PM | <strong>Where:</strong> A007, RnD Block</p>
-            <a class="cta" href="https://forms.gle/Yg57PSjEEgeCjUoT9" target="_blank" rel="noopener">Register</a>
-          </div>
-        </div>
-
-        <div class="divider"></div>
-
-        <!-- All registrations / Linktree -->
-        <p style="margin:0 0 8px;">📌 <strong>All registrations & details:</strong></p>
-        <p style="margin:0 0 16px;">
-          <a href="https://linktr.ee/ieeeiiitdelhi" target="_blank" rel="noopener" class="small">https://linktr.ee/ieeeiiitdelhi</a>
-        </p>
-
-        <!-- Register image / extra CTA (optional) -->
-        <div style="text-align:center; margin-bottom:14px;">
-          <a href="https://linktr.ee/ieeeiiitdelhi" target="_blank" rel="noopener" style="display:inline-block; text-decoration:none;">
-            <img src="reg.png" alt="Register — All Events" style="max-width:160px; border-radius:8px;" />
-          </a>
-        </div>
-
-        <p class="small" style="margin-bottom:4px;">Join the chase. Build. Compete. Dominate. Let’s make IEEE Day 2025 unforgettable.</p>
-
-        <p style="margin:18px 0 4px;"><strong>Best,</strong></p>
-        <p style="margin:0 0 8px;"><strong></strong>IEEE Student Chapter — IIITD</p>
-
-      </div>
-
-      <div class="footer">
-        © 2025 IEEE Student Chapter at IIITD • 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IEEE Day — Events</title>
+  <style>
+    body { margin:0; padding:20px; background:#f4f6f8; font-family:"Segoe UI", Roboto, Arial, sans-serif; color:#222; }
+    .email-wrapper { max-width:680px; margin:0 auto; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 6px 24px rgba(20,30,40,0.08); }
+    .header { text-align:center; padding:18px; background:linear-gradient(90deg,#003f8a,#0066cc); color:#fff; }
+    .header img { max-width:80%; display:block; margin:0 auto; border-bottom:6px solid rgba(255,255,255,0.06); }
+    .content { padding:22px; }
+    h1 { margin:8px 0 12px; font-size:20px; color:#0b3b78; }
+    p.lead { margin:0 0 14px; line-height:1.5; color:#333; }
+    .card { display:flex; gap:14px; align-items:center; margin:14px 0; padding:12px; border-radius:8px; background:#fbfdff; box-shadow:0 1px 0 rgba(0,0,0,0.03); }
+    .card img { width:100px; height:100px; object-fit:contain; border-radius:8px; background:#fff; padding:6px; }
+    .card .info { flex:1; }
+    .card .info h3 { margin:0 0 8px; font-size:16px; color:#09376a; }
+    .card .info p { margin:0 0 10px; font-size:14px; color:#333; line-height:1.4; }
+    .cta { display:inline-block; text-decoration:none; padding:8px 12px; border-radius:6px; background:#0066cc; color:white; font-weight:600; font-size:14px; }
+    .small { font-size:13px; color:#666; }
+    .divider { height:1px; background:#eef2f6; margin:18px 0; border-radius:2px; }
+    .footer { padding:16px; text-align:center; font-size:13px; color:#6b7680; background:#fafbfc; }
+    @media (max-width:520px){ .card { flex-direction:column; text-align:center; } .card img { width:90%; height:auto; } }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper" role="article" aria-label="IEEE Day Events">
+    <div class="header">
+      <img src="https://raw.githubusercontent.com/anshu-l/mail-issue-/main/mail%20ieee/main.png" alt="IEEE Day — Celebrate, Build, Compete" />
+      <div style="padding:10px 6px 18px;">
+        <h1 style="color:#fff; margin:8px 0 0;">IEEE Day — 7th & 8th October</h1>
+        <div style="font-size:14px; opacity:0.95;">Join us for two days of puzzles, bots, building and speed!</div>
       </div>
     </div>
-  </body>
+
+    <div class="content">
+      <p class="lead">IEEE Day is just around the corner — here’s the full line-up. Register using the links in each section. We’ll post posters and final details soon. See you in the chase, build, compete, and dominate!<br><br><strong>When:</strong> 7th & 8th Oct • <strong>Where:</strong> Online & IIITD campus</p>
+
+      <div class="card" role="region" aria-label="Slash">
+        <img src="https://raw.githubusercontent.com/anshu-l/mail-issue-/main/mail%20ieee/slash.png" alt="Slash — Cryptic Hunt" />
+        <div class="info">
+          <h3>Slash — 24-Hour Cryptic Hunt</h3>
+          <p class="small">A cipher hides a clue; a clue unlocks a puzzle; a puzzle leads to a prize pool of ₹10,000+. Think, decode, win.</p>
+          <p class="small"><strong>When:</strong> 7th Oct (7 PM) → 8th Oct (7 PM) | <strong>Mode:</strong> Online</p>
+          <a class="cta" href="https://forms.gle/UYSz2K9hHxUxtGDX9" target="_blank" rel="noopener">Register</a>
+        </div>
+      </div>
+
+      <div class="card" role="region" aria-label="Autorush">
+        <img src="https://raw.githubusercontent.com/anshu-l/mail-issue-/main/mail%20ieee/autorush.png" alt="Autorush — Build Autonomous Bots" />
+        <div class="info">
+          <h3>Autorush — Build Autonomous Bots</h3>
+          <p class="small">Build bots that race through surprise games — no hands, no keyboard. Beginner-friendly (ESP32).</p>
+          <p class="small"><strong>When:</strong> 8th Oct | <strong>Where:</strong> Offline (IEEE Week)</p>
+          <a class="cta" href="https://forms.gle/3SWzqe5J28NbSm6k8" target="_blank" rel="noopener">Register</a>
+        </div>
+      </div>
+
+      <div class="card" role="region" aria-label="BYOL">
+        <img src="https://raw.githubusercontent.com/anshu-l/mail-issue-/main/mail%20ieee/byolb.png" alt="Build Your Own Lab - BYOL" />
+        <div class="info">
+          <h3>Build Your Own Lab (BYOL)</h3>
+          <p class="small">Hands-on workshop: build a working oscilloscope using ESP32. No prior experience required. Free refreshments.</p>
+          <p class="small"><strong>When:</strong> 7th Oct • 3 PM onwards | <strong>Where:</strong> C101, LHC Block</p>
+          <a class="cta" href="https://forms.gle/qdgfJuPGbuuBcHTW9" target="_blank" rel="noopener">Register</a>
+        </div>
+      </div>
+
+      <div class="card" role="region" aria-label="Typothon">
+        <img src="https://raw.githubusercontent.com/anshu-l/mail-issue-/main/mail%20ieee/Typothon.png" alt="Typothon — Typing Face-off" />
+        <div class="info">
+          <h3>Typothon — Ultimate Typing Face-off</h3>
+          <p class="small">Three rounds of speed, precision, and surprises. Typing matters when ₹7,000+ is at stake. BYO keyboard.</p>
+          <p class="small"><strong>When:</strong> 8th Oct • 3 PM | <strong>Where:</strong> A007, RnD Block</p>
+          <a class="cta" href="https://forms.gle/Yg57PSjEEgeCjUoT9" target="_blank" rel="noopener">Register</a>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <p style="margin:0 0 8px;">📌 <strong>All registrations & details:</strong></p>
+      <p style="margin:0 0 16px;"><a href="https://linktr.ee/ieeeiiitdelhi" target="_blank" rel="noopener" class="small">https://linktr.ee/ieeeiiitdelhi</a></p>
+
+      <div style="text-align:center; margin-bottom:14px;">
+        <a href="https://linktr.ee/ieeeiiitdelhi" target="_blank" rel="noopener" style="display:inline-block; text-decoration:none;">
+          <img src="https://raw.githubusercontent.com/anshu-l/mail-issue-/main/mail%20ieee/reg.png" alt="Register — All Events" style="max-width:160px; border-radius:8px;" />
+        </a>
+      </div>
+
+      <p class="small" style="margin-bottom:4px;">Join the chase. Build. Compete. Dominate. Let’s make IEEE Day 2025 unforgettable.</p>
+
+      <p style="margin:18px 0 4px;"><strong>Best,</strong></p>
+      <p style="margin:0 0 8px;"><strong>Anshul</strong><br>Chair, IEEE Student Chapter — IIITD</p>
+
+    </div>
+
+    <div class="footer">© 2025 IEEE Student Chapter at IIITD • Want to update subscription preferences? Reply to this mail or contact the chapter leads.</div>
+  </div>
+</body>
 </html>
